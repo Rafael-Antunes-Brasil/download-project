@@ -1,0 +1,39 @@
+<div class="width: 50%;margin: 0 auto;">
+    <!-- Formulário de URLs -->
+    <!-- <div *ngFor="let url of urls; let i = index" class="url-input">
+        <input type="text" [(ngModel)]="urls[i]" placeholder="Insira a URL do arquivo" />
+        <button type="button" class="remove-btn" (click)="removeUrlField(i)">-</button>
+    </div> -->
+
+    <!-- <div>
+        <h2>Formulário de Download</h2>
+        <input type="text" [(ngModel)]="url" placeholder="Insira a URL" />
+        <button (click)="download()">Baixar</button>
+        <p>{{ message }}</p>
+    </div> -->
+    <div class="width: 50%;margin: 0 auto;">
+        <!-- <h2>Baixar Vídeo do YouTube</h2> -->
+        <input type="text" [(ngModel)]="url" placeholder="Insira a URL do YouTube" />
+        <button (click)="submit()">Baixar</button>
+        <p>{{ message }}</p>
+    </div>
+
+
+
+    <!-- Botão para adicionar mais URLs -->
+    <!-- <button type="button" (click)="addUrlField()">Adicionar URL</button> -->
+
+    <!-- Botão para enviar as URLs -->
+    <!-- <button type="button" class="download-btn" (click)="submit()">Baixar Arquivos</button> -->
+
+    <!-- Exibir mensagens de erro, se existirem -->
+    <div *ngIf="errorMessage" class="error">
+        {{ errorMessage }}
+    </div>
+
+    <!-- Exibir link de download, se disponível -->
+    <!-- <div *ngIf="downloadLink" class="success">
+        <p>Arquivos compactados com sucesso!</p>
+        <a [href]="downloadLink" download>Baixar Arquivo ZIP</a>
+    </div> -->
+</div>
